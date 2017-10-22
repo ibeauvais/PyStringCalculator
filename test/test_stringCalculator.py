@@ -39,3 +39,15 @@ class TestStringCalculator(TestCase):
 
         # Then
         self.assertEqual(result, 7)
+
+    def test_add_with_space_as_separator(self):
+        """should return_sum when space is separator("""
+        # Given
+        input = "3 4"
+        stringcalculator = StringCalculator()
+
+        # When
+        result = stringcalculator.add(input)
+
+        # Then
+        self.assertEqual(result, 7)
